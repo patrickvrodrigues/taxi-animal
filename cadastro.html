@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Táxi Animal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/logo/logo.png" width="70"
+                    height="85"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#nossoapp">Nosso app</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Trabalhe conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Fale conosco</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" id="btnLogin" class="btn btn-info btn-lg" data-toggle="modal"
+                data-target="#modalLogin">Login</button>
+
+        </div>
+    </nav>
+
+    <!-- Crie sua conta -->
+    <section class="bg-light page-section" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase" style="margin-top: 10%;">Crie sua conta</h2>
+                    <h3 class="section-subheading text-muted">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-6 center">
+
+                                <div class="form-group">
+                                    <input class="form-control" id="firstname" type="text" placeholder="Seu Nome"
+                                        required="required"
+                                        data-validation-required-message="Por favor, insira seu nome.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="form-control" id="lastname" type="text" placeholder="Sobrenome"
+                                        required="required"
+                                        data-validation-required-message="Por favor, insira seu sobrenome.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="form-control" id="email" type="email" placeholder="E-mail"
+                                        required="required"
+                                        data-validation-required-message="Por favor, insira seu endereço de email.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Telefone"
+                                        required="required"
+                                        data-validation-required-message="Por favor, insira seu número de telefone.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 form-group">
+                                        <input class="form-control" id="cep" type="text" placeholder="CEP"
+                                            required="required"
+                                            data-validation-required-message="Por favor, insira seu número de telefone.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <input class="form-control" id="district" type="text" placeholder="Bairro"
+                                            required="required"
+                                            data-validation-required-message="Por favor, insira o seu bairro.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="form-control" id="password" type="password"
+                                        placeholder="Crie um senha" required="required"
+                                        data-validation-required-message="Por favor, insira uma senha.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="form-control" id="confirm_password" type="password"
+                                        placeholder="Confirme sua senha" required="required"
+                                        data-validation-required-message="Por favor, repita sua senha.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 text-center">
+
+                                <p>Tenha acesso aos serviços da Táxi Animal. Insira seus dados para criar uma conta.
+                                </p>
+                                <button id="sendMessageButton" class="btn btn-danger btn-xl text-uppercase"
+                                    type="submit">Cadastrar</button>
+
+                                <br>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Táxi Animal 2019</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Login -->
+    <div id="modalLogin" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Email" required="required"
+                            data-validation-required-message="Por favor, insira seu endereço de email.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" id="password" type="password" placeholder="Senha"
+                            required="required" data-validation-required-message="Por favor, insira uma senha.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="loginButton" class="btn btn-success" type="submit">Entrar</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+                <div class="text-center">
+                    <p>Ainda não é cadastrado? Cadastre-se <a href="cadastro.html">aqui</a></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
